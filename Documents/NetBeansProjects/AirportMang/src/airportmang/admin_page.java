@@ -21,8 +21,7 @@ import javax.swing.table.DefaultTableModel;
  */
 public class admin_page extends javax.swing.JFrame {
 
-    static ResultSet rs;
-    DefaultTableModel emp_info;
+    static ResultSet emp_info;
     /**
      * Creates new form admin_page
      */
@@ -35,9 +34,7 @@ public class admin_page extends javax.swing.JFrame {
         
         Statement st = con.createStatement();
         
-        rs = st.executeQuery("select * from employee_info");
-        
-//        emp_info = buildTableModel(rs);
+        emp_info = st.executeQuery("select * from employee_info");
         
         initComponents();
         
@@ -55,32 +52,25 @@ public class admin_page extends javax.swing.JFrame {
 
         admin_logout = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
+        employee_table = new javax.swing.JTable();
+        hello_label = new javax.swing.JLabel();
+        register_button = new javax.swing.JButton();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        admin_logout.setText("Logout");
+        admin_logout.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                admin_logoutActionPerformed(evt);
+            }
+        });
+
         try{
-            employee_table = new javax.swing.JTable(buildTableModel(rs));
-            hello_label = new javax.swing.JLabel();
-            register_button = new javax.swing.JButton();
-
-            setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-            admin_logout.setText("Logout");
-            admin_logout.addActionListener(new java.awt.event.ActionListener() {
-                public void actionPerformed(java.awt.event.ActionEvent evt) {
-                    admin_logoutActionPerformed(evt);
-                }
-            });
-
+            employee_table.setModel(buildTableModel(emp_info));
         }catch(Exception e)
         {
             e.printStackTrace();
         }
-        employee_table.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-
-            },
-            new String [] {
-
-            }
-        ));
         employee_table.setAutoResizeMode(javax.swing.JTable.AUTO_RESIZE_ALL_COLUMNS);
         jScrollPane1.setViewportView(employee_table);
 

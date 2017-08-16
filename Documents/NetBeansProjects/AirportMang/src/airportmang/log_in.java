@@ -5,6 +5,7 @@
  */
 package airportmang;
 
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -23,7 +24,7 @@ public class log_in extends javax.swing.JFrame {
     /**
      * Creates new form log_in
      */
-    public log_in() {
+    public log_in() throws IOException {
         initComponents();
     }
 
@@ -60,6 +61,7 @@ public class log_in extends javax.swing.JFrame {
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Airport Management");
 
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED), "LOGIN", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("SansSerif", 1, 18), java.awt.Color.black)); // NOI18N
 
@@ -235,7 +237,11 @@ public class log_in extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new log_in().setVisible(true);
+                try {
+                    new log_in().setVisible(true);
+                } catch (IOException ex) {
+                    Logger.getLogger(log_in.class.getName()).log(Level.SEVERE, null, ex);
+                }
             }
         });
     }
