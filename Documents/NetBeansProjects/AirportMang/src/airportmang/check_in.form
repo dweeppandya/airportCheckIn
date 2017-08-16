@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Container class="javax.swing.JFrame" name="jFrame1">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace min="0" pref="400" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace min="0" pref="300" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+    </Container>
+    <Container class="javax.swing.JFrame" name="jFrame2">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace min="0" pref="400" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace min="0" pref="300" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+    </Container>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jPanel1" max="32767" attributes="0"/>
+                          <Component id="jScrollPane1" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="users_name" min="-2" pref="268" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="logout_button" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <Component id="boarding_status_panel1" max="32767" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="boarding_status_panel" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="logout_button" alignment="3" max="32767" attributes="0"/>
+                  <Component id="users_name" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="23" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="boarding_status_panel1" max="32767" attributes="0"/>
+                  <Component id="boarding_status_panel" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="jScrollPane1" min="-2" pref="290" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="boarding_status_panel">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder title="Boarding Status">
+              <Border PropertyName="innerBorder" info="org.netbeans.modules.form.compat2.border.SoftBevelBorderInfo">
+                <BevelBorder/>
+              </Border>
+            </TitledBorder>
+          </Border>
+        </Property>
+        <Property name="name" type="java.lang.String" value="Boarding Status" noResource="true"/>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Component id="not_boarded_label" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace pref="256" max="32767" attributes="0"/>
+                          <Component id="not_boarded_count_label" min="-2" pref="118" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <Component id="boarded_label" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="boarded_count_label" min="-2" pref="118" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace min="22" pref="22" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="boarded_label" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                      <Component id="boarded_count_label" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="not_boarded_label" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                      <Component id="not_boarded_count_label" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="boarded_label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Boarded:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="not_boarded_label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Not Boarded:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="boarded_count_label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="jLabel3"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="not_boarded_count_label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="jLabel4"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTable" name="jTable1">
+          <Properties>
+            <Property name="autoResizeMode" type="int" value="4"/>
+            <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+              <TableColumnModel selectionModel="0"/>
+            </Property>
+            <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+              <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+            </Property>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JTable(buildTableModel(rs))"/>
+            <AuxValue name="JavaCodeGenerator_CreateCodePre" type="java.lang.String" value="try{"/>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="}&#xa;catch(Exception e)&#xa;{&#xa;    e.printStackTrace();&#xa;}"/>
+          </AuxValues>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="boarding_status_panel1">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder title="CHECK-IN">
+              <Border PropertyName="innerBorder" info="org.netbeans.modules.form.compat2.border.SoftBevelBorderInfo">
+                <BevelBorder/>
+              </Border>
+              <Font PropertyName="font" name="SansSerif" size="10" style="0"/>
+              <Color PropertyName="color" blue="0" green="0" id="black" palette="1" red="0" type="palette"/>
+            </TitledBorder>
+          </Border>
+        </Property>
+        <Property name="name" type="java.lang.String" value="Boarding Status" noResource="true"/>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="boarded_label1" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="not_boarded_label1" alignment="0" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="ref_id_txtfld" max="32767" attributes="0"/>
+                      <Component id="flight_no_txtfld" pref="113" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="board_button" pref="87" max="32767" attributes="0"/>
+                      <Component id="cancel_button" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace pref="44" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="boarded_label1" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                      <Component id="ref_id_txtfld" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                      <Component id="board_button" alignment="3" pref="49" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="not_boarded_label1" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                              <Component id="flight_no_txtfld" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="cancel_button" pref="48" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace pref="46" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="boarded_label1">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Ref. ID:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="not_boarded_label1">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Flight No.:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="ref_id_txtfld">
+        </Component>
+        <Component class="javax.swing.JTextField" name="flight_no_txtfld">
+        </Component>
+        <Component class="javax.swing.JButton" name="board_button">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Board"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="board_buttonActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="cancel_button">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Cancel"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cancel_buttonActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="jPanel1">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder title="FLIGHT-INFORMATION">
+              <Border PropertyName="innerBorder" info="org.netbeans.modules.form.compat2.border.SoftBevelBorderInfo">
+                <BevelBorder/>
+              </Border>
+            </TitledBorder>
+          </Border>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Component id="flightno_label" min="-2" max="-2" attributes="0"/>
+                      <Component id="flightName_label" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="flightNo_info_label" alignment="0" min="-2" pref="67" max="-2" attributes="0"/>
+                      <Component id="flightName_info_label" alignment="0" min="-2" pref="98" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="arrivalTime_info_label" alignment="1" min="-2" max="-2" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Component id="arrivalTime_label" min="-2" max="-2" attributes="0"/>
+                              <Component id="departureTime_label" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="departureTime_info_label" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace min="-2" pref="71" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Component id="destination_label" min="-2" max="-2" attributes="0"/>
+                      <Component id="source_label" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="source_info_label" max="32767" attributes="0"/>
+                      <Component id="destination_info_label" pref="57" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Component id="date_label" min="-2" max="-2" attributes="0"/>
+                      <Component id="gate_label" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Component id="date_info_label" min="-2" max="-2" attributes="0"/>
+                      <Component id="gate_info_label" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="flightno_label" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
+                      <Component id="flightNo_info_label" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
+                      <Component id="arrivalTime_label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="arrivalTime_info_label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="source_label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="source_info_label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="date_label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="date_info_label" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="flightName_label" alignment="3" max="32767" attributes="0"/>
+                      <Component id="flightName_info_label" alignment="3" max="32767" attributes="0"/>
+                      <Component id="departureTime_label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="departureTime_info_label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="destination_label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="destination_info_label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="gate_label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="gate_info_label" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="flightno_label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Flight Number:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="flightNo_info_label">
+        </Component>
+        <Component class="javax.swing.JLabel" name="flightName_label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Name:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="flightName_info_label">
+        </Component>
+        <Component class="javax.swing.JLabel" name="arrivalTime_label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Arrival Time:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="arrivalTime_info_label">
+        </Component>
+        <Component class="javax.swing.JLabel" name="departureTime_label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Departure Time:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="departureTime_info_label">
+        </Component>
+        <Component class="javax.swing.JLabel" name="source_label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Source:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="destination_label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Destination:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="source_info_label">
+        </Component>
+        <Component class="javax.swing.JLabel" name="destination_info_label">
+        </Component>
+        <Component class="javax.swing.JLabel" name="date_label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Date:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="gate_label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Gate:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="date_info_label">
+        </Component>
+        <Component class="javax.swing.JLabel" name="gate_info_label">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JButton" name="logout_button">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Logout"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="logout_buttonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="users_name">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+  </SubComponents>
+</Form>
