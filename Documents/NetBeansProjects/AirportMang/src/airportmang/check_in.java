@@ -7,6 +7,7 @@ package airportmang;
 import java.sql.*;
 import java.awt.event.MouseWheelEvent;
 import java.awt.event.MouseWheelListener;
+import java.io.IOException;
 import java.util.Vector;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -438,7 +439,12 @@ public class check_in extends javax.swing.JFrame {
     }//GEN-LAST:event_board_buttonActionPerformed
 
     private void logout_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logout_buttonActionPerformed
-       log_in logout= new log_in();
+       log_in logout=null;
+       try {
+           logout = new log_in();
+       } catch (IOException ex) {
+           Logger.getLogger(check_in.class.getName()).log(Level.SEVERE, null, ex);
+       }
        logout.setVisible(true);
        this.setVisible(false);
     }//GEN-LAST:event_logout_buttonActionPerformed

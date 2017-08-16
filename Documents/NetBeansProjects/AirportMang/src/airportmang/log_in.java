@@ -186,6 +186,7 @@ public class log_in extends javax.swing.JFrame {
                             admin_page login = new admin_page();
                             login.setVisible(true);
                             this.setVisible(false);
+                            login.hello_label.setText(userName_textField.getText());
                             flag=true;
                             break;
                         }

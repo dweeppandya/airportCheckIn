@@ -6,6 +6,7 @@
 package airportmang;
 
 import static airportmang.check_in.buildTableModel;
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -129,7 +130,12 @@ public class admin_page extends javax.swing.JFrame {
 
     private void admin_logoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_admin_logoutActionPerformed
         // TODO add your handling code here:
-        log_in logout = new log_in();
+        log_in logout=null;
+        try {
+            logout = new log_in();
+        } catch (IOException ex) {
+            Logger.getLogger(admin_page.class.getName()).log(Level.SEVERE, null, ex);
+        }
         logout.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_admin_logoutActionPerformed
